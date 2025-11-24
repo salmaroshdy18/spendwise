@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Brand -->
+    <color name="primary">#FF8A5C</color>
+    <color name="primaryDark">#E56B3C</color>
+    <color name="accentGreen">#28C76F</color>
+    <color name="accentPurple">#7367F0</color>
+
+    <!-- Purple for buttons -->
+    <color name="purple_500">#7367F0</color>
+    <color name="purple_700">#5A4DDD</color>
+
+    <!-- Backgrounds -->
+    <color name="bgMain">#E9D3D6</color>
+    <color name="cardBg">#FFF8F2</color>
+    <color name="cardBgDark">#3E3F58</color>
+
+    <!-- Used in dashboard -->
+    <color name="bgLight">#FFF4E8</color>
+
+    <!-- Status -->
+    <color name="income">#28C76F</color>
+    <color name="expense">#EA5455</color>
+
+    <!-- Text -->
+    <color name="textMain">#3B3B3B</color>
+    <color name="textLight">#9B9B9B</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="primaryColor">#6750A4</color>  <!-- Purple M3 default -->
+    <color name="secondaryColor">#625B71</color>
+    <color name="tertiaryColor">#7D5260</color>
+
+    <color name="primaryContainer">#EADDFF</color>
+    <color name="onPrimaryContainer">#21005D</color>
+
+    <!-- OPTIONAL: backgrounds -->
+    <color name="backgroundLight">#FCFCFF</color>
+    <color name="backgroundDark">#121212</color>
+    <color name="spendwise_secondary">#5A2A3A</color>
+    <color name="spendwise_background">#FFF7FA</color> <!-- light pink -->
+    <color name="spendwise_onPrimary">#FFFFFF</color>
+    <color name="spendwise_primary">#8A1F4B</color>
+
+
+
+
+</resources>

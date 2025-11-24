@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvAboutTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About SpendWise"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/tvAboutSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Personal Finance Management App"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tvProblemTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Problem"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tvProblemText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Many people struggle to keep track of daily expenses, recurring bills, and savings goals. Income and spending are often scattered across cash, cards, and digital wallets, which makes it difficult to see the full financial picture and stay on top of financial goals."
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tvSolutionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Our Solution"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tvSolutionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SpendWise is a simple, modern mobile app that helps users record income and expenses, categorize spending, set budgets, and see everything in one clear dashboard with charts. It is designed to give users better visibility over their money, support smarter decisions, and help them move closer to their financial goals."
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tvFeaturesTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Key Features"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tvFeaturesText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="- Track income and expenses\n- Categorize transactions (Food, Rent, Transport, etc.)\n- View balance and charts on a central dashboard\n- Set budgets to control spending\n- Get simple tips and insights to build healthier financial habits"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</ScrollView>

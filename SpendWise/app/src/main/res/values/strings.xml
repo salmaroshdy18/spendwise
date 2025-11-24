@@ -1,0 +1,30 @@
+<resources>
+    <!-- App Name -->
+    <string name="app_name">SpendWise</string>
+
+    <!-- Dashboard Amount Format -->
+    <string name="aed_amount">AED %.2f</string>
+
+    <!-- Transaction Screen -->
+    <string name="title">Title</string>
+    <string name="amount">Amount</string>
+    <string name="category">Category</string>
+    <string name="income">Income</string>
+    <string name="expense">Expense</string>
+    <string name="recurring">Recurring</string>
+    <string name="save">Save</string>
+
+    <!-- Toast Messages -->
+    <string name="fill_all_fields">Please fill all fields</string>
+    <string name="transaction_saved">Transaction saved</string>
+
+    <!-- Dashboard Labels -->
+    <string name="total_income">Total Income</string>
+    <string name="total_expense">Total Expense</string>
+    <string name="latest_transactions">Latest Transactions</string>
+    <string name="monthly_expense">Monthly Expense</string>
+    <string name="category_spending">Category Spending</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="?attr/colorSurface">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="40dp">
+
+        <!-- LOGO -->
+        <FrameLayout
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/logo_circle_bg"
+            android:elevation="6dp"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/icon"
+                android:contentDescription="Logo" />
+        </FrameLayout>
+
+        <!-- WHITE CARD -->
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="24dp"
+            android:background="@drawable/card_top_curve"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="Sign in"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="@color/textMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="If you already registered"
+                android:textSize="14sp"
+                android:textColor="@color/textLight"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:hint="Username / Email"
+                android:background="@drawable/rounded_input"
+                android:padding="14dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:hint="Password"
+                android:background="@drawable/rounded_input"
+                android:inputType="textPassword"
+                android:padding="14dp"
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <!-- BUTTON & LINKS (moved down & centered) -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="24dp"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign in"
+                android:textAllCaps="false"
+                android:layout_marginTop="16dp" />
+
+
+            <TextView
+                android:id="@+id/tvForgot"
+                android:text="Forgot password?"
+                android:textColor="@color/textLight"
+                android:layout_marginTop="16dp"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvRegister"
+                android:text="Don’t have an account? Register"
+                android:textColor="@color/textMain"
+                android:layout_marginTop="6dp"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

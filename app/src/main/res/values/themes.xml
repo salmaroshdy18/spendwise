@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- App theme -->
+    <style name="Theme.SpendWise" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Brand Material 3 colors -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+
+        <item name="colorSecondary">@color/secondaryColor</item>
+        <item name="colorTertiary">@color/tertiaryColor</item>
+
+        <!-- Default button + text field styles -->
+        <item name="materialButtonStyle">@style/SpendWiseButton</item>
+        <item name="textInputStyle">@style/SpendWiseTextField</item>
+
+        <!-- Optional background -->
+        <item name="android:windowBackground">@color/backgroundLight</item>
+    </style>
+
+    <!-- Global MaterialButton look -->
+    <style name="SpendWiseButton" parent="Widget.Material3.Button">
+        <item name="cornerRadius">12dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="backgroundTint">@color/primaryColor</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!-- Global TextInputLayout look -->
+    <style name="SpendWiseTextField" parent="Widget.Material3.TextInputLayout.FilledBox.Dense">
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+        <item name="boxBackgroundColor">@color/primaryContainer</item>
+        <item name="hintTextColor">@color/onPrimaryContainer</item>
+    </style>
+
+</resources>

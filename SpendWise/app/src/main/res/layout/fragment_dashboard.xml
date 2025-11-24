@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgMain"
+    android:padding="16dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- ===== SUMMARY CARDS ===== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <!-- INCOME CARD -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/card_top_curve">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Income"
+                    android:textColor="#28C76F"
+                    android:textStyle="bold"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvIncome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AED 0.00"
+                    android:textColor="#28C76F"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_marginTop="6dp" />
+            </LinearLayout>
+
+            <!-- EXPENSE CARD -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/card_top_curve">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Expense"
+                    android:textColor="#EA5455"
+                    android:textStyle="bold"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvExpense"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AED 0.00"
+                    android:textColor="#EA5455"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_marginTop="6dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- ===== DAILY TREND TITLE ===== -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daily Spending Trend"
+            android:textStyle="bold"
+            android:textColor="@color/textMain"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp" />
+
+        <!-- LINE CHART -->
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/lineChartTrend"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:background="@drawable/card_white"
+            android:padding="10dp" />
+
+        <!-- ===== CATEGORY PIE TITLE ===== -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expenses by Category"
+            android:textStyle="bold"
+            android:textColor="@color/textMain"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp" />
+
+        <!-- PIE CHART -->
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pieChartCategories"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:background="@drawable/card_white"
+            android:padding="10dp" />
+
+        <!-- ===== MONTHLY BAR TITLE ===== -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monthly Expense Comparison"
+            android:textStyle="bold"
+            android:textColor="@color/textMain"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp" />
+
+        <!-- BAR CHART -->
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barChartMonthly"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:background="@drawable/card_white"
+            android:padding="10dp" />
+
+        <!-- ===== LATEST TRANSACTIONS ===== -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latest Transactions"
+            android:textStyle="bold"
+            android:textColor="@color/textMain"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvLatestTransactions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_white"
+            android:padding="10dp"
+            android:nestedScrollingEnabled="false" />
+
+    </LinearLayout>
+
+</ScrollView>

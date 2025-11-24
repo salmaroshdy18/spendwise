@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="?attr/colorSurface">
+
+    <!-- CHAT SCROLL AREA -->
+    <ScrollView
+        android:id="@+id/chatScroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:id="@+id/chatContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </ScrollView>
+
+    <!-- CHAT INPUT -->
+    <LinearLayout
+        android:id="@+id/chatInputContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/etMessage"
+            android:hint="Ask me anything..."
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"
+            android:padding="12dp"
+            android:background="@drawable/rounded_input"
+            android:textColor="@color/black"
+            android:textColorHint="#888" />
+
+        <ImageButton
+            android:id="@+id/btnSend"
+            android:src="@drawable/ic_send"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Send" />
+
+    </LinearLayout>
+
+    <!-- QUICK BUTTONS -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/btnBudgetTips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Budget Tips"
+            android:background="@drawable/rounded_button"
+            android:textColor="@color/white"
+            android:layout_margin="4dp"/>
+
+        <Button
+            android:id="@+id/btnExpenseAdvice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expense Advice"
+            android:background="@drawable/rounded_button"
+            android:textColor="@color/white"
+            android:layout_margin="4dp"/>
+
+        <Button
+            android:id="@+id/btnSavingTips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saving Tips"
+            android:background="@drawable/rounded_button"
+            android:textColor="@color/white"
+            android:layout_margin="4dp"/>
+    </LinearLayout>
+
+</LinearLayout>

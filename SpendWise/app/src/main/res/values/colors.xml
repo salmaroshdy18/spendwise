@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Brand -->
+    <color name="primary">#FF8A5C</color>
+    <color name="primaryDark">#E56B3C</color>
+    <color name="accentGreen">#28C76F</color>
+    <color name="accentPurple">#7367F0</color>
+
+    <!-- Backgrounds -->
+    <color name="bgMain">#E9D3D6</color>
+    <color name="cardBg">#FFF8F2</color>
+    <color name="cardBgDark">#3E3F58</color>
+
+    <!-- Used in dashboard -->
+    <color name="bgLight">#FFF4E8</color>
+
+    <!-- Status -->
+    <color name="income">#28C76F</color>
+    <color name="expense">#EA5455</color>
+
+    <!-- Text -->
+    <color name="textMain">#3B3B3B</color>
+    <color name="textLight">#9B9B9B</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+</resources>

@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/dashboardFragment"
+        android:title="Home"
+        android:icon="@android:drawable/ic_menu_view"/>
+
+    <item
+        android:id="@+id/transactionsFragment"
+        android:title="Transactions"
+        android:icon="@android:drawable/ic_menu_agenda"/>
+
+    <item
+        android:id="@+id/budgetsFragment"
+        android:icon="@drawable/ic_budget"
+        android:title="Budgets" />
+
+    <item
+        android:id="@+id/chatbotFragment"
+        android:title="Salma Bot"
+        android:icon="@android:drawable/ic_menu_help"/>
+
+    <item
+        android:id="@+id/settingsFragment"
+        android:icon="@drawable/ic_settings"
+        android:title="Settings" />
+
+</menu>

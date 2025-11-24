@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Category dropdown -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutCategory"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Category">
+
+        <AutoCompleteTextView
+            android:id="@+id/dropdownCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Budget limit input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutLimit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Monthly limit"
+        android:layout_marginTop="12dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputLimit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Save button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSaveBudget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Budget"
+        android:layout_marginTop="16dp" />
+
+    <!-- Budgets list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerBudgets"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
